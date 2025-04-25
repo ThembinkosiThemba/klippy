@@ -1,0 +1,28 @@
+[package]
+name = "klippy"
+version = "0.1.0"
+authors = ["Thembinkosi Mkhonta (thembinkosimkhonta01@gmail.com)"]
+edition = "2021"
+
+description = "A lightweight clipboard manager built with Rust and egui."
+license = "MIT"
+homepage = "https://github.com/ThembinkosiThemba/klippy"
+repository = "https://github.com/ThembinkosiThemba/klippy"
+readme = "README.md"
+keywords = ["rust", "egui", "clipboard", "copy", "manager"]
+include = ["src/**/*.rs", "Cargo.toml", "README.md"]
+
+
+[dependencies]
+chrono = {version = "0.4.40", features = ["serde"]}
+clipboard = "0.5.0"
+directories = "6.0.0"
+eframe = "0.31.1"
+egui = "0.31.1"
+open = "5.3.2"
+serde ={ version = "1.0.219", features = ["derive"] }
+serde_json = "1.0.140"
+
+[[bin]]
+name = "klippy"
+path = "src/main.rs"
