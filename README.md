@@ -21,6 +21,12 @@ Klippy can:
 cargo install klippy
 ```
 
+then run
+
+```bash
+klippy
+```
+
 #### From source
 
 1. Clone
@@ -60,8 +66,6 @@ The application stores your clipboard data at:
 - **macOS**: `~/Library/Application Support/com.klippy.klippy/config/data.json`
 
 You can open this location directly using the "Open Storage" button.
-
-## License
 
 ## License
 
